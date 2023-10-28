@@ -1,0 +1,35 @@
+{
+  "name": "captains-music",
+  "version": "1.0.0",
+  "description": "Our Discord bot is your music companion, playing tracks from YouTube, Spotify, and SoundCloud. It's easy to set up, with custom prefixes and user-friendly commands. Manage queues, control volume, and get lyrics. Elevate your server with the ultimate music experience in just a few clicks!",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaptainFAHIM/captains-music.git"
+  },
+  "author": "CaptainFAHIM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaptainFAHIM/captains-music/issues"
+  },
+  "homepage": "https://github.com/CaptainFAHIM/captains-music#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.11.0",
+    "@distube/soundcloud": "^1.2.1",
+    "@distube/spotify": "^1.3.2",
+    "@distube/yt-dlp": "^1.1.3",
+    "discord.js": "^14.0.3",
+    "distube": "^4.0.2",
+    "dotenv": "^16.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "libsodium-wrappers": "^0.7.10"
+  }
+}
