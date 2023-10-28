@@ -102,4 +102,9 @@ client.distube
   )
   .on('finish', queue => queue.textChannel.send('Finished!'))
 
+
+process.on('unhandledRejection', (error) => {
+  // Not handled properly
+});
+
 client.login(process.env.TOKEN)
