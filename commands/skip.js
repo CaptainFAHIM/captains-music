@@ -8,7 +8,7 @@ module.exports = {
       const song = await queue.skip()
       message.channel.send(`${client.emotes.success} | Skipped! Now playing:\n${song.name}`)
     } catch (e) {
-      message.channel.send(`${client.emotes.error} | ${e}`)
+      message.channel.send(`${client.emotes.error} | ${e.message}`)
     }
   }
 }

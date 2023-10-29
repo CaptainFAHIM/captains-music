@@ -4,7 +4,6 @@ module.exports = {
   inVoiceChannel: true,
   run: async (client, message, args) => {
     const queue = client.distube.getQueue(message)
-    console.log(client.distube.filters);
     if (!queue) return message.channel.send(`${client.emotes.error} | There is nothing in the queue right now!`)
     const filter = args[0]
     if (filter === 'off' && queue.filters.size) queue.filters.clear()
