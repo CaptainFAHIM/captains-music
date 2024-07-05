@@ -29,6 +29,7 @@
     "discord.js": "^14.13.0",
     "distube": "^4.1.0",
     "dotenv": "^16.3.1",
+    "ffmpeg-static": "^5.2.0",
     "eslint-config-prettier": "^8.10.0",
     "libsodium-wrappers": "^0.7.13"
   }
