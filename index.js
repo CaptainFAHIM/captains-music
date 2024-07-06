@@ -1,3 +1,16 @@
+// For hosting to Render (Not necessary)
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hey!!! I am okay.')
+})
+
+app.listen(port, () => {
+  console.log(`Bot Page Running on ${port}`)
+})
+//=================================================================
 require("dotenv").config()
 const { DisTube } = require('distube')
 const Discord = require('discord.js')
