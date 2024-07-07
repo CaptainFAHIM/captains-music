@@ -116,8 +116,9 @@ client.distube
   .on('finish', queue => queue.textChannel.send('Finished!'))
 
 
-process.on('unhandledRejection', (error) => {
-  // Not handled properly
-});
+  process.on('unhandledRejection', (error) => {
+    console.error('Unhandled promise rejection:', error);
+  });
+  
 
 client.login(process.env.TOKEN)
